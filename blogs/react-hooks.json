@@ -1,0 +1,11 @@
+{
+    "id": 1,
+    "author": "John Doe",
+    "title": "Understanding React Hooks",
+    "line_description": "A quick guide to understanding the basics of React hooks.",
+    "date": "2024-11-13",
+    "last_edited": "2024-11-15",
+    "tags": ["React", "JavaScript", "Web Development"],
+    "content": "# React Hooks\nReact hooks allow you to use **state** and _other React features_ in functional components.\n\nHere's how you can use `useState`:\n\n```javascript\nconst [count, setCount] = useState(0);\n```\n\nFor more information, check the [React documentation](https://reactjs.org)."
+  }
+  
