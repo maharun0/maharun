@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
 import Projects from './components/Projects';
@@ -11,7 +11,7 @@ function App() {
     <Router>
       <div className="min-h-screen bg-gradient-to-r from-blue-200 via-pink-200 to-purple-300">
         <Navbar />
-        <div className="">
+        <div>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/projects" element={<Projects />} />
@@ -26,3 +26,4 @@ function App() {
 }
 
 export default App;
+
