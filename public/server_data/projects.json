@@ -1,0 +1,11 @@
+[
+  {
+    "name": "Manga Scraper",
+    "duration": "Sep 2024 - Sep 2024 ",
+    "description": "Scrapes manga from a website and scrapes images chapterwise",
+    "link": "https://github.com/maharun0/manga_scraping_python_script",
+    "image": "https://github.com/maharun0/manga_scraping_python_script/raw/main/assets/20240815_193648_image.png",
+    "tags": ["Python"],
+    "hideLink": true
+  }
+]
