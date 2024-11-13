@@ -2,7 +2,8 @@ import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
 import Projects from './components/Projects';
-import Blogs from './components/Blogs';
+import Blogs from './components/Blogs'; // Blog preview page
+import BlogDetails from './components/BlogDetails'; // Individual blog page
 import Skills from './components/Skills';
 import AboutMe from './components/AboutMe';
 
@@ -15,7 +16,8 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/projects" element={<Projects />} />
-            <Route path="/blogs" element={<Blogs />} />
+            <Route path="/blogs" element={<Blogs />} /> {/* Blog preview page */}
+            <Route path="/blogs/:id" element={<BlogDetails />} /> {/* Individual blog page */}
             <Route path="/skills" element={<Skills />} />
             <Route path="/about" element={<AboutMe />} />
           </Routes>
@@ -26,4 +28,3 @@ function App() {
 }
 
 export default App;
-

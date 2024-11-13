@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { SiReact, SiNodedotjs, SiNextdotjs, SiGo, SiPython } from 'react-icons/si'; // Import additional icons as needed
+import { SiReact, SiNodedotjs, SiNextdotjs, SiGo, SiPython } from 'react-icons/si';
 
 // Map of technology names to corresponding icons
 const iconMap = {
@@ -34,7 +34,6 @@ const ProjectCard = ({ name, description, link, image, tags, hideLink }) => (
       </div>
       <p className="text-gray-300 mb-2">{description}</p>
       
-      
       {/* Conditionally display the link text based on hideLink */}
       <a href={link} className="text-gray-400 hover:text-gray-200" target="_blank" rel="noopener noreferrer">
         {hideLink ? "View project" : link} <span aria-hidden="true">↗</span>
@@ -52,7 +51,7 @@ const Projects = () => {
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
-    fetch('server_data/projects.json') // fetch from the public folder
+    fetch('./projects/projects.json') // fetch from the public folder
       .then((response) => {
         if (!response.ok) throw new Error('Failed to load projects data');
         return response.json();
