@@ -1,4 +1,9 @@
+import { useLocation } from 'react-router-dom';
+
 const Skills = () => {
+  const location = useLocation();
+  const isHomePage = location.pathname === '/'
+
   const skills = [
     { name: 'JavaScript', level: 'Advanced' },
     { name: 'React', level: 'Advanced' },
@@ -9,7 +14,7 @@ const Skills = () => {
   ];
 
   return (
-    <div className="p-4">
+    <div className={`p-4 ${!isHomePage? 'px-60' : ''}`}>
       <h1 className="text-3xl font-bold mb-4">My Skills</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {skills.map((skill, index) => (

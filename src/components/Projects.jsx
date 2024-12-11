@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { SiReact, SiNodedotjs, SiNextdotjs, SiGo, SiPython } from 'react-icons/si';
+import { useLocation } from 'react-router-dom';
 
 // Map of technology names to corresponding icons
 const iconMap = {
@@ -50,6 +51,9 @@ const ProjectCard = ({ name, description, link, image, tags, hideLink }) => (
 const Projects = () => {
   const [projects, setProjects] = useState([]);
 
+  const location = useLocation();
+  const isHomePage = location.pathname === '/'
+
   useEffect(() => {
     fetch('./projects/projects.json') // fetch from the public folder
       .then((response) => {
@@ -61,9 +65,9 @@ const Projects = () => {
   }, []);
 
   return (
-    <div className="p-6">
+    <div className={`p-4 ${!isHomePage? 'px-36' : ''}`}>
       <h1 className="text-3xl font-bold mb-4 text-black">Projects</h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {projects.map((project, index) => (
           <ProjectCard key={index} {...project} />
         ))}

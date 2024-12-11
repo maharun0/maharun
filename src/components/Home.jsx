@@ -21,7 +21,7 @@ const Home = () => (
 
     {/* Sections */}
     {['projects', 'blogs', 'skills', 'about'].map((id) => (
-      <section key={id} id={id} className="w-full max-w-4xl py-4 px-2">
+      <section key={id} id={id} className="w-full max-w-4xl">
         {id === 'projects' && <Projects />}
         {id === 'blogs' && <Blogs />}
         {id === 'skills' && <Skills />}
