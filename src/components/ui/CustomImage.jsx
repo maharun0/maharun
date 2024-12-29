@@ -5,3 +5,8 @@ const Image = ({ src, alt = 'image', className = '' }) => {
 };
 
 export default Image;
+
+// how to use
+// import Image from '../components/ui/CustomImage';
+// import logo from '../assets/logo1.svg';
+// <Image src={logo} className="" />
