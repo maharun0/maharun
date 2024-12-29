@@ -1,15 +1,15 @@
 import { useLocation } from 'react-router-dom';
 import CarouselSection from '../components/ui/CarouselSection';
 import Image from '../components/ui/CustomImage';
-import icpcBigPoster from '../assets/designs/icpc big poster.png';
-import icpcSmallPoster from '../assets/designs/icpc small poster.png';
-import injpc24Cover from '../assets/designs/injpc24 slides cover page.png';
-import injpc24 from '../assets/designs/injpc24.png';
-import nirjhorFarewell from '../assets/designs/nirjhor vi farewell.png';
-import s17 from '../assets/designs/s17.png';
-import s18 from '../assets/designs/s18.png';
-import s19 from '../assets/designs/s19.png';
-import s20 from '../assets/designs/s20.png';
+import icpcBigPoster from '../assets/designs/icpc big poster-small.jpg';
+import icpcSmallPoster from '../assets/designs/icpc small poster-small.jpg';
+import injpc24Cover from '../assets/designs/injpc24 slides cover page-small.jpg';
+import injpc24 from '../assets/designs/injpc24-small.jpg';
+import nirjhorFarewell from '../assets/designs/nirjhor vi farewell-small.jpg';
+import s17 from '../assets/designs/s17-small.jpg';
+import s18 from '../assets/designs/s18-small.jpg';
+import s19 from '../assets/designs/s19-small.jpg';
+import s20 from '../assets/designs/s20-small.jpg';
 
 const AboutMe = () => {
   const location = useLocation();
@@ -31,7 +31,6 @@ const AboutMe = () => {
       title: 'Design S19',
       description: 'Sample design S19.',
     },
-    
     {
       image: s18,
       title: 'Design S18',
