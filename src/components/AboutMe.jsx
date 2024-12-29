@@ -64,16 +64,16 @@ const AboutMe = () => {
   ];
 
   return (
-    <div className={`p-4 ${!isHomePage ? 'px-72' : ''}`}>
-      <h1 className="text-3xl font-bold mb-4">About Me</h1>
-      <p className="text-gray-600 mb-4">
+    <div className={`p-4 ${!isHomePage ? 'md:px-16 lg:px-32' : ''}`}>
+      <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">About Me</h1>
+      <p className="text-gray-600 mb-4 text-sm md:text-base lg:text-lg">
         Hi! I am Maharun Afroz, a passionate software developer with a love for solving problems. 
       </p>
-      <p className="text-gray-600 mb-4">
+      <p className="text-gray-600 mb-4 text-sm md:text-base lg:text-lg">
         When I’m not coding, I enjoy reading about new tech trends, contributing to open-source projects, 
         and exploring new places.
       </p>
-      <p className="text-gray-600 mb-4">
+      <p className="text-gray-600 mb-4 text-sm md:text-base lg:text-lg">
         Feel free to reach out if you have any exciting project ideas or just want to connect!
       </p>
 
