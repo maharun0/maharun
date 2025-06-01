@@ -8,7 +8,7 @@ export default defineConfig({
     react(),
     svgr(),
   ],
-  base: '/portfolio/', // Replace REPOSITORY_NAME with your GitHub repository name
+  base: '/maharun/', // Replace REPOSITORY_NAME with your GitHub repository name
   server: {
     host: '0.0.0.0', // Allows access from other devices on the network
     port: 5173,      // Sets the server to listen on port 5173
